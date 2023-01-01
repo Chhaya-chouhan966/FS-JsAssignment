@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculater.css">
+</head>
+<body>
+      <div class="parent">
+        <div class="top">
+            <div id="topLeft" class="display"></div>
+            <div onclick="clearDisplay(event)" class="clear all">C</div>
+        </div>
+         <hr style="width: 100%; color: black; box-shadow: 2px red;"> 
+        <div class="bottom">
+            <div id="divOne">
+                <div onclick="getValue(event)" class="seven all">7</div>
+                <div onclick="getValue(event)" class="eight all">8</div>
+                <div onclick="getValue(event)" class="nine all">9</div>
+                <div onclick="getValue(event)" class="divide all">/</div>
+            </div>
+            <div id="divTwo">
+                <div onclick="getValue(event)" class="six all">6</div>
+                <div onclick="getValue(event)" class="five all">5</div>
+                <div onclick="getValue(event)" class="four all">4</div>
+                <div onclick="getValue(event)" class="multiply all">*</div>
+            </div>
+            <div id="divThree">
+                <div onclick="getValue(event)" class="three all">3</div>
+                <div onclick="getValue(event)" class="two all">2</div>
+                <div onclick="getValue(event)" class="one all">1</div>
+                <div onclick="getValue(event)" class="minus all">-</div>
+            </div>
+            <div id="divFour">
+                <div onclick="getValue(event)" class="zero all">0</div>
+                <div onclick="getValue(event)" class="dot all">.</div>
+                <div onclick="equals(event)" class="equals all">=</div>
+                <div onclick="getValue(event)" class="plus all">+</div>
+            </div>
+        </div>
+      </div>
+      <script>
+           var currentValue
+           function getValue(event) {
+               currentValue=event.target.innerText
+            //    console.log(currentValue);
+               const display=document.getElementById("topLeft")
+               display.innerText+=currentValue 
+               currentValue=display.innerText
+           }
+          
+           function equals() {
+             const display=document.getElementById("topLeft")
+             display.innerText=""
+             display.innerText=eval(currentValue)
+        
+           }
+            function clearDisplay(event) {
+            const display=document.getElementById("topLeft")
+            display.innerText= ""
+        
+           }
+
+
+      </script>
+
+      
+</body>
+</html>
