@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        height: 100vh;
+        width: 100vw;
+        border: 5px solid red;
+        display: flex;
+        justify-content: center;
+        padding: 4rem;
+    }
+
+    div {
+        height: 40%;
+        width: 50%;
+        border: 5px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    input {
+        height: 13%;
+        width: 35%;
+        font-size: 20px;
+        outline: none;
+        border: 3px solid green;
+    }
+
+    button {
+        height: 12%;
+        width: 15%;
+        font-size: 20px;
+    }
+</style>
+
+
+<body>
+    <div>
+        <input id="input" type="text">
+        <h1 id="para"></h1>
+        <button onclick="getOutput()">click me</button>
+    </div>
+
+    <script>
+        function getOutput() {
+
+            var input = document.getElementById("input").value
+            var para=document.getElementById("para")
+            para.innerText=input
+            document.getElementById("input").value=""
+
+        }
+    </script>
+</body>
+
+</html>
