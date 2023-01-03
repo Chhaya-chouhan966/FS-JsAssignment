@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+       <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+
+            height: 100vh;
+            width: 100wv;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: gainsboro;
+          
+        }
+        .parent{
+            height: 95%;
+            width: 40%;
+            /* border: 2px solid black; */
+            font-size: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            margin: 1rem ;
+            background-color: white;
+        }
+        .div{
+            height: 6%;
+            width: 15%;
+            border: 3px solid black;
+            border-radius: 5px;
+            margin: 0.2rem ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            
+        }
+        button{
+            height: 6%;
+            width: 20%;
+            font-size: 20px;
+            border-radius: 5%;
+            background-color: gainsboro;
+        }
+
+        
+       </style>
+<body>
+    <div class="parent">
+        <div class="div" id="blue">1st child</div>
+        <div  class="div greens">2nd child</div>
+        <div class="div">3rd child</div>
+        <div class="div greens">4rt child</div>
+        <div class="div">5th child</div>
+        <div class="div greens">6th child</div>
+        <div class="div">7th child</div>
+        <div class="div greens">8th child</div>
+        <div class="div" id="lime">9th child</div>
+        <div class="div greens">10th child</div>
+        <div class="div">11th child</div>
+        <div class="div greens">12th child</div>
+        <div class="div">13th child</div>
+        <div class="div greens">14th child</div>
+        <div class="div">15th child</div>
+        <div class="div greens">16th child</div>
+        <div class="div" id="pink">17th child</div>
+        <button onclick="button()">click me</button>
+
+    </div>
+    <script>
+        function button() {
+
+            var blue=document.getElementById("blue")
+            blue.style.backgroundColor="#0000FF"
+            blue.style.color="white"
+
+            var lime=document.getElementById("lime")
+            lime.style.backgroundColor="#008000"
+            lime.style.color="white"
+
+            var tan=document.getElementsByClassName("greens")
+            for (let i = 0; i < tan.length; i++) {
+                tan[i].style.backgroundColor="#01FF00"
+                tan[i].style.color="white"
+            }
+            var pink=document.getElementById("pink")
+            pink.style.backgroundColor="#DB7093"
+            pink.style.color="white"
+            
+        }
+    </script>
+</body>
+
+</html>
