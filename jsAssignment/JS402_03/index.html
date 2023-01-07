@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #divOne {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 25%;
+            width: 25%;
+            /* border: 2px solid red; */
+        }
+        #divOne  button{
+            height: 20%;
+        }
+        #divOne input{
+            height: 20%;
+        }
+
+        #divTwo {
+        
+            width: fit-content;
+            /* border: 2px solid black; */
+           
+        }
+        /* .deled{
+            border: 2px solid green;    
+        } */
+
+        li{
+            font-size: 20px;
+            color: green;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <h1>My Shopping List</h1>
+    <div id="divOne">
+        <p style="font-size: 16px; color: red;">Enter a new item:</p>
+        <input id="input" type="text" placeholder="write item names">
+        <button onclick="list()">Add item</button>
+    </div>
+    <div id="divTwo">
+    </div>
+
+    <script>
+        var counter=0
+         var divTwo = document.getElementById("divTwo")
+        
+         function list() {
+                
+            const input = document.getElementById("input").value
+
+            divTwo.innerHTML += `<div class="deled" id="deled${counter}" >
+                                      <ul>
+                                         <li>${input}
+                                            <button onclick="delet(${counter})">Delete</button>
+                                         </li>
+                                      </ul>
+                                 </div>`
+                                
+                                document.getElementById("input").value=""
+            counter=counter+1
+                               
+        }
+        function delet(counter){
+            const divDeled=document.getElementById(`deled${counter}`)
+            divDeled.remove()   
+        }
+
+         
+
+    </script>
+</body>
+
+</html>
