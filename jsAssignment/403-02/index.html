@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<style>
+    .fill
+    {
+
+       height: 100vh;
+       background-color: rgb(38, 38, 56);
+    }
+
+    .fill1
+    {
+       height: 70%;
+    }
+
+    .fill1 div  
+    {
+        height: 500px;
+        height: auto;
+        margin:15px;
+        background-color: white;
+        border-radius:8px;
+        border: 8px solid rgb(78, 68, 99);
+    }
+
+    .fill1 div img
+    {
+        height: 130px;
+        width: 130px;
+    }
+    img{
+     position: relative;
+     z-index: 1;
+    }
+    h1{
+        z-index: 10;
+    color: #da0463;
+    position: absolute;
+    margin-top: 26px;
+    text-shadow: 3px 0 #dbedf3;
+    font-size: 75px;
+    font-weight: bold;
+    }
+    .image_drum{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+   h2{
+    font-size: 5rem;
+    color:#DBEDF3;
+    text-shadow: 3px 0 #da0463;
+   }
+</style>
+</head>
+<body>
+    <div class="container-fluid fill">
+        <h2 class="text-center  fw-bold pt-5">Drum 🥁 Kit</h2>
+            <div class="d-flex justify-content-center fill1 align-items-center flex-wrap">
+                <div class="image_drum" onclick="song(event)">
+                    <img src="Drum_Kit/images/crash.png" alt="" srcset="" height="100" width="100">
+                    <h1 id="w" value ="w">W</h1>
+                </div>
+                <div class="image_drum"  onclick="song(event)">
+                    <img src="Drum_Kit/images/tom2.png" alt="" srcset="" height="100" width="100"  >
+                    <h1 id="a">a</h1>
+                </div>
+                <div class="image_drum" onclick="song(event)">
+                    <img src="Drum_Kit/images/snare.png" alt="" srcset="" height="100" width="100">
+                    <h1 id="j">j</h1>
+                </div>
+                <div class="image_drum" onclick="song()">
+                    <img src="Drum_Kit/images/tom1.png" alt="" srcset="" height="100" width="100" >
+                    <h1 id="d">d</h1>
+                </div>
+                <div class="image_drum" onclick="song()">
+                    <img src="Drum_Kit/images/tom3.png" alt="" srcset="" height="100" width="100"  >
+                    <h1 id="k">k</h1>
+                </div>
+                <div class="image_drum" onclick="song()">
+                    <img src="Drum_Kit/images/tom4.png" alt="" srcset="" height="100" width="100"  >
+                    <h1 id="s">s</h1>
+                </div>  
+                <div class="image_drum" onclick="song()">
+                    <img src="Drum_Kit/images/kick.png" alt="" srcset="" height="100" width="100"  >
+                    <h1 id="l">l</h1>
+                </div>            
+           </div>
+    </div>
+    <script>
+         var ans
+        function song(event) {
+           ans = event.target.innerText
+           if(ans == "W"){
+            ans = new Audio('Drum_Kit/sounds/crash.mp3');
+            ans.play();
+           }
+           else if(ans == "a"){
+            ans = new Audio('Drum_Kit/sounds/buzz.mp3');
+            ans.play();
+           }
+           else if(ans == "j"){
+            ans = new Audio('Drum_Kit/sounds/buzzer.mp3');
+            ans.play();
+           }
+           else if(ans == "d"){
+            ans = new Audio('Drum_Kit/sounds/crock.mp3');
+            ans.play();
+           }
+            //ans.document.style="cursor-pointer:none;"
+            // ans = new Audio('Drum_Kit/sounds/crash.mp3');
+            // buzzer = new Audio('Drum_Kit/sounds/buzzer.mp3')
+            // // crash = new Audio('Drum_Kit/sounds/crash.mp3')
+            // // crock = new Audio('Drum_Kit/sounds/buzzer.mp3')
+            // // kick_bass = new Audio('Drum_Kit/sounds/buzzer.mp3')
+            // // buzzer = new Audio('Drum_Kit/sounds/buzzer.mp3')
+            
+            
+            // buzzer.play();
+            // crash.play();
+        }
+        </script>
+    </script>
+</body>
+</html>
