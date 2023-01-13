@@ -160,7 +160,10 @@
 
     <script>
            function result() {
-            
+
+            const result=document.getElementById("result")
+            result.innerHTML=""
+
             const inputOne=+document.getElementById("inputOne").value
             const inputTwo= +document.getElementById("inputTwo").value
             
@@ -170,10 +173,8 @@
             const per=(inputOne*res)/inputTwo
             const total=(per/100).toFixed(2)
 
-            const result=document.getElementById("result")
-            console.log(result);
             result.innerHTML=`<h5>TIP AMOUNT</h5>
-                               <h1 style="margin:0">$${total}</span></h1>
+                               <h3 style="margin:0">$${total}</span></h3>
                               <p>each</p>`
 
            }
