@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RestorentTip</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            /* border: 5px solid red; */
+            background-image: url("to.jpg");
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .parent {
+            height: 90%;
+            width: 30%;
+            background-color: white;
+            border: 2px solid red;
+        }
+
+        .head {
+            height: 20%;
+            width: 100%;
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+        }
+
+        h1 {
+            margin: 1rem;
+        }
+
+        .payment {
+            height: 15%;
+            width: 100%;
+            /* border: 2px solid blue; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* align-items: center; */
+            padding-left: 1.5rem;
+        }
+
+        .bill {
+            height: 40%;
+            width: 100%;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+            /* border: 2px solid green; */
+            margin: 0.5rem 0;
+        }
+
+        .bill input {
+            height: 80%;
+            width: 35%;
+        }
+
+        .bill select {
+            height: 80%;
+            width: 37%;
+        }
+
+        #inputTwo {
+            height: 80%;
+            width: 37%;
+        }
+
+        .button {
+            height: 15%;
+            width: 100%;
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            height: 40%;
+            width: 45%;
+            text-align: center;
+            font-size: 18px;
+            color: white;
+            background-color: tomato;
+        }
+
+        .result {
+            height: 15%;
+            width: 100%;
+            /* border: 2px solid blue; */
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items:center;
+            padding: 0 0;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="head">
+            <h1>Charles' Tip<br>Calculater</h1>
+            <hr width="90%">
+        </div>
+        <div id="payment" class="payment">
+            <h4>How much was your bill?</h4>
+            <div class="bill">
+                <h4>$</h4>
+                <input id="inputOne" type="number">
+            </div>
+        </div>
+        <div class="payment">
+            <h4>How much was your service?</h4>
+            <div class="bill">
+                <select name="" id="select">
+                    <option value="">--Choose an option--</option>
+                    <option class="option" value="30">30% - Outstanding</option>
+                    <option class="option" value="20">20% - Good</option>
+                    <option class="option" value="15">15% - It was oky</option>
+                    <option class="option" value="10">10% - Bad</option>
+                    <option class="option" value="5">5% - Trrible</option>
+                </select>
+            </div>
+        </div>
+        <div class="payment">
+            <h4>How much pepoles are eating?</h4>
+            <div class="bill">
+                <input id="inputTwo"  type="number">
+                <h4>pepole</h4>
+            </div>
+        </div>
+        <div class="button">
+            <button onclick="result()">Calculate!</button>
+        </div>
+        <div class="result" id="result">
+            
+        </div>
+
+    </div>
+
+    <script>
+           function result() {
+            
+            const inputOne=+document.getElementById("inputOne").value
+            const inputTwo= +document.getElementById("inputTwo").value
+            
+            const sel=+document.getElementById("select").selectedIndex
+            const res=select[sel].value
+            
+            const per=(inputOne*res)/inputTwo
+            const total=(per/100).toFixed(2)
+
+            const result=document.getElementById("result")
+            console.log(result);
+            result.innerHTML=`<h5>TIP AMOUNT</h5>
+                               <h1 style="margin:0">$${total}</span></h1>
+                              <p>each</p>`
+
+           }
+    </script>
+</body>
+
+
+</html>
