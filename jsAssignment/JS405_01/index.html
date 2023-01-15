@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>worldCountryPopulation</title>
+    <script defer src="data.js"></script>
+    <script defer src="index.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="top">
+            <h1>World Countries Data</h1>
+            <h4 id="countryLength"></h4>
+        </div>
+        <hr>
+        <div class="bottom">
+            <div class="bottomUp">
+                <div class="buttonDiv">
+                    <button onclick="population()">Population</button>
+                    <button onclick="language()">Language</button>
+                </div>
+                <p id="paraTenTop">10 Most populated countries in the world</p>
+            </div>
+            <div class="bottomDown" id="result">
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
