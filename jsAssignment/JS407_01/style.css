@@ -1,0 +1,101 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: fit-content;
+    width: 100%;
+    
+}
+
+.main{
+    width: 100%;
+    height: 100vh;
+    /* border: 10px solid red; */
+    display: flex;
+    flex-direction: column;
+    
+}
+.top{
+    height: 15%;
+    width: 100%;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #840e4d;
+    color: white;
+
+
+}
+.bottom{
+    height: 85%;
+    width: 100%;
+    /* border: 2px solid black; */
+}
+.bottomSearch{
+    height: 10%;
+    width: 100%;
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e95f8d;
+}
+#input{
+    height: 50%;
+    width: 20%;
+    margin: 0.2rem;
+    font-size: 1rem;
+    padding:  0 1rem ;
+}
+#button{
+    height: 50%;
+    width: 5%;
+    font-size: 1rem;
+}
+#resContainer{
+    height: fit-content;
+    width: 100%;
+    /* border: 4px solid black; */
+    font-size: 1.1rem;
+    background-color: #f4dde5;
+    color: black;
+
+}
+table{
+    height: 10%;
+    width: 100%;
+    border: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+}
+tbody{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+tr{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+td{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#p{
+    background-color: tomato;
+    padding:  1rem 1rem;
+}
