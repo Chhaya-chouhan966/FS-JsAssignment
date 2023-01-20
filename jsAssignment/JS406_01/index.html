@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="data.js"></script>
+    <script defer src="index.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <h1>WORLD COUNTRIES LIST</h1>
+            <p id="countryLength"></p>
+            <p id="currentCountry"></p>
+            <div class="button">
+                <button onclick="startWith()">Starting Word</button>
+                <button onclick="searchWithKey()">Search With Any Key</button>
+            </div>
+            <input id="input" onkeyup="startWith()"  type="text" placeholder="Search Country!!!!">
+        </div>
+        <div id="mainContainer">
+           
+        </div>
+    </div>
+
+</body>
+
+</html>
