@@ -1,0 +1,95 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    /* height: 100vh; */
+    width: 100%;
+    /* border: 5px solid red; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    overflow-x: none;
+
+}
+
+
+h1{
+   padding: 1rem;
+}
+.head{
+    height: 5rem;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#firstName,
+#LastName,
+#country,
+#score{
+    height: 40%;
+    width: 12%;
+    margin: 0.1rem;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+}
+button{
+    height: 40%;
+    width: 10%;
+    background-color: antiquewhite;
+}
+
+#resultDiv{
+    /* height: 85%; */
+    width: 100%;
+    /* border: 3px solid green; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.innerDiv{
+    height: 6%;
+    width: 60%;
+    /* border: 3px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    margin: 0.5rem;
+    background-color: antiquewhite;
+}
+.del{
+    height: 100%;
+    width: 20%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0.5rem;
+}
+.hi{
+    color: red;
+
+}
+.delet{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+
+}
+.para{
+    color: red;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
