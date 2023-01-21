@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: aquamarine;
+
+}
+.main{
+    /* height: 100vh; */
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    background-color: aquamarine;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    width: 25%;
+    /* border: 5px solid black; */
+     display: flex;
+    flex-direction: column;
+}
+label{
+    font-size: 1.2rem;
+
+}
+.hOne{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+input{
+     height: 2.5rem;
+     width: 100%;
+     margin: 0.5rem 0;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+button{
+    height: 2.5rem;
+    width: 40%;
+    font-size: 1.1rem;
+    background-color: grey;
+    margin: 0.5rem 0;
+}
+.p{
+    color: red;
+}
+.errorRed{
+    border: 2px solid red;
+    outline: red;
+}

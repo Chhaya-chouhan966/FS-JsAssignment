@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="hOne">
+            <h1>Validating Web Forms</h1>
+
+        </div>
+        <form action="">
+            
+            
+            <label for="">First Name</label>
+            <input onkeyup="firstNameValidate()" type="text" name="" id="firstName">
+            <p class="p" id="firstNameValidate"></p> 
+            
+            <label for=""> Last Name</label>
+            <input onkeyup="lastNameValidate()" type="text" name="" id="lastName">
+            <p class="p" id="lastNameValidate"></p> 
+
+            <label for="">Email</label>
+            <input onkeyup="emailValidate()" type="text" name="" id="email">
+            <p class="p" id="emailValidate"></p>
+            
+            <label for="">Password</label>
+            <input onkeyup="passwordValidate()" type="password" name="" id="password">
+            <p class="p" id="passwordValidate"></p>
+
+            <label for="">Telephone</label>
+            <input onkeyup="telephoneValidate()" type="number" name="" id="telephone">
+            <p class="p" id="telephoneValidate"></p>
+
+            <label for="">Your Boi</label>
+            <input onkeyup="yourBioValidate()" type="text" name="" id="yourBio">
+            <p class="p" id="yourBioValidate"></p>
+            <div class="button">
+                <button onclick="fromValidate()">Submit</button>
+
+            </div>
+        </form>
+    </div>
+</body>
+</html>
