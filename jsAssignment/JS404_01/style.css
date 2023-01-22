@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    height: 100vh;
+    width: 100%;
+    /* border: 3px solid red; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background-image: url("img/nightSky.gif");
+}
+.head1{
+    height: 13%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid blue; */
+    color: white;
+}
+.inputDiv{
+    height: 12%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid blue; */
+}
+#weightInput,
+#selectContainer,
+#calculateButton{
+    height: 40%;
+    width: 12%;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0.1rem;
+}
+#resultContainer{
+    /* height: 75%; */
+    width: 100%;
+    /* border: 5px solid palevioletred; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+#resultContainerInnerDiv{
+    /* height: 80%; */
+    width: 75%;
+    /* border: 5px solid blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.2);
+    font-size: 1.3rem;
+    color: white; 
+}
+.imageDiv{
+    height: 30rem;
+    width: 50%;
+    /* border: 5px solid orange; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+img{
+    height: 30rem;
+    width: 100%;
+
+}
+
+.calculateResultDiv{
+    height: 30rem;
+    width: 50%;
+    /* border: 5px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.headOneDiv{
+    height: 15rem;
+    width: 90%;
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    background-color: rgba(255, 255, 255, 0.2);
+
+}
+.headOne{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
+    margin: 1rem;
+    background-color: rgba(255, 255, 255, 0.3);
+
+
+}
