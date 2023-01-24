@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #212121;
+}
+
+.head {
+    height: 4rem;
+    width: 80%;
+    /* border: 4px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1b1d1d;
+    color: white;
+}
+
+.headingDiv {
+    height: 4.5rem;
+    width: 80%;
+    /* border: 4px solid red; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    /* margin-top: 0.5rem; */
+}
+
+#h3 {
+    padding-top: 1rem;
+}
+
+.clearDiv {
+    height: 5rem;
+    width: 50%;
+    /* border: 4px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#clearButton {
+    height: 2.5rem;
+    width: 20%;
+    background-color: #212121;
+    color: white;
+    outline: none;
+    font-size: 1rem;
+    border: #212121;
+    /* padding-top: 0.3rem; */
+}
+
+.inputDiv {
+    height: 4rem;
+    width: 80%;
+    /* border: 2px solid white; */
+}
+
+input {
+    height: 2.5rem;
+    width: 30%;
+    border-radius: 8px 0px 0px 8px;
+    font-size: 1.1rem;
+    border: 1px solid white;
+    outline: none;
+    box-shadow: 1px 1px 1px 1px gray,
+        1px -1px 1px 1px gray;
+}
+
+#Go {
+    height: 2.5rem;
+    width: 7.5%;
+    border-radius: 0px 8px 8px 0px;
+    font-size: 1.1rem;
+    background-color: #212121;
+    color: white;
+    box-shadow: 1px 1px 1px 1px gray,
+        1px -1px 1px 1px gray;
+}
+
+#resultContainer {
+    width: 80%;
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+.profileDiv {
+    height: 6rem;
+    width: 23%;
+    /* border: 2px solid red; */
+    margin: 0.8rem 0;
+    border-radius: 4px;
+    display: flex;
+    /* background-color: #212121; */
+    box-shadow: 2px 2px 1px 0px #1b1d1d,
+    1px 2px 2px 2px black;
+}
+#profileDivImg{
+    height: 5.8rem;
+    width: 6rem;
+    /* border: 2px solid green; */
+    border-radius: 50%;
+}
+/* .h3{
+    
+} */
+.profile{
+    height: 5.8rem;
+    width:12rem ;
+    /* border: 2px solid orange; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 0.7rem;
+    color: white;
+   
+}
+.a{
+    color: white;
+}
+
