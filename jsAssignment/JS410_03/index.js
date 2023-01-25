@@ -13,11 +13,9 @@ async function enter() {
         })
 
         arr.map((ele)=>{
-            const h=ele.startsWith(input.value)
-            if (h==false) {
+           
                 resultContainer.innerHTML+=`<img id="img" src="${ele}" alt="">`     
-                
-            }
+            
         })
 
 
