@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    background-color: #161e54;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+.divPara{
+    height: 5rem;
+    width: 100%;
+    /* border: 2px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.inputDiv{
+    height: 5rem;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1.5rem;
+}
+input{
+    height: 2.5rem;
+    width: 20%;
+    font-size: 1.2rem;
+    outline: none;
+}
+button{
+    height: 2.5rem;
+    width: 5%;
+    background-color: #161e54;
+    color: white;
+    font-size: 1rem;
+}
+#resultContainer{
+    height: 5rem;
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.resultPara{
+    font-size: 1.2rem;
+    color: #161e54;
+    padding-top: 1.5rem;
+}
