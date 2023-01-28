@@ -146,6 +146,80 @@ body{
     width: 100%;
 }
 
+@media only screen and (max-width:1024px) {
+    #head{
+        font-size: 2rem;
+    }
+    #input{
+        width: 45%;
+        font-size: 1.3rem;
+    }
+    #button{
+        width: 13%;
+        font-size: 1.5rem;
+
+    }
+    #locate h1{
+        font-size: 1.5rem;
+        margin-bottom: 2.5rem;
+    }
+    #temp{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .oneDiv{
+        width: 150%;
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+    }
+    .twoDiv{
+        width: 120%;
+        font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    #head{
+        font-size: 2rem;
+    }
+    #input{
+        width: 70%;
+        font-size: 1.5rem;
+    }
+    #button{
+        width: 20%;
+        font-size: 1.3rem;
+
+    }
+    #locate h1{
+        font-size: 1.5rem;
+        margin-bottom: 2.5rem;
+    }
+    #temp{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .oneDiv{
+        width: 150%;
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+    }
+    .twoDiv{
+        width: 120%;
+        font-size: 1.2rem;
+    }
+}
+
 @media only screen and (max-width:500px) {
     #head{
         font-size: 1.7rem;
@@ -163,9 +237,6 @@ body{
         font-size: 1rem;
         margin-bottom: 2.5rem;
     }
-    /* .imgTemp{
-        width: 20%;
-    } */
     #temp{
       display: flex;
       flex-direction: column;
@@ -183,6 +254,49 @@ body{
     .twoDiv{
         width: 100%;
         font-size: 1rem;
+    }
+}
+@media only screen and (max-width:350px) {
+    #head{
+        font-size: 1.5rem;
+    }
+    #input{
+        width: 75%;
+        font-size: 1rem;
+    }
+    #button{
+        width: 25%;
+        font-size: 1rem;
+
+    }
+    #locate h1{
+        font-size: 1rem;
+        margin-bottom: 5rem;
+    }
+    #temp{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .oneDiv{
+        width: 150%;
+        height: 180%;
+        font-size: 0.9rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 1rem;
+    }
+    .twoDiv{
+        width: 120%;
+        height: 200%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        font-size: 0.9rem;
     }
 }
 
