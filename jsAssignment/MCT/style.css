@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./bg.jpg");
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+#head{
+    height: 7%;
+    width: 80%;
+    color: #ffcd6c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    /* border: 2px solid black; */
+}
+#img
+{
+    height: 15%;
+    /* border: 2px solid black; */
+}
+.inputButton{
+    height: 8%;
+    width: 80%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+}
+#input{
+    height: 75%;
+    width: 25%;
+    /* border: 1px solid red; */
+    outline: none;
+    padding-left: 0.5rem;
+    font-size: 1rem;
+    border: 0.2px solid #ffcd6c;
+
+}
+#button{
+    height: 75%;
+    width: 7%;
+    font-size: 1rem;
+    background-color: #ffcd6c;
+    border: 0.1px solid #ffcd6c;
+}
+#resultContainer{
+     height: 60%;
+     width: 60%;
+     /* border: 2px solid black; */
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     align-items: center;
+}
+#locate{
+    height: 20%;
+    width: 100%;
+    /* border: 5px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#locate img{
+    height: 50%;
+    width: 20%;
+}
+#temp{
+    height: 40%;
+    width: 100%;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.oneDiv{
+    height: 80%;
+    width: 40%;
+    /* border: 3px solid green; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    
+}
+.divImg{
+    height: 100%;
+    width: 50%;
+    /* border: 2px solid red; */
+    
+}
+.divTemp{
+    height: 100%;
+    width: 50%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.headTemp{
+    font-size: 2rem;
+}
+
+.twoDiv{
+    height: 80%;
+    width: 40%;
+    /* border: 3px solid green; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 2rem;
+    padding-left: 5rem;
+ 
+}
+
+.divImg{
+    height: 100%;
+    width: 50%;
+    /* border: 2px solid red; */
+}
+.divTemp{
+    height: 100%;
+    width: 50%;
+    /* border: 2px solid red; */
+}
+#other{
+    height: 40%;
+    width: 100%;
+    /* border: 5px solid yellow; */
+  
+}
+.imgTemp{
+    height: 100%;
+    width: 100%;
+}
+
+@media only screen and (max-width:500px) {
+    #head{
+        font-size: 1.7rem;
+    }
+    #input{
+        width: 70%;
+        font-size: 1rem;
+    }
+    #button{
+        width: 20%;
+        font-size: 1rem;
+
+    }
+    #locate h1{
+        font-size: 1rem;
+        margin-bottom: 2.5rem;
+    }
+    /* .imgTemp{
+        width: 20%;
+    } */
+    #temp{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .oneDiv{
+        width: 150%;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem;
+    }
+    .twoDiv{
+        width: 100%;
+        font-size: 1rem;
+    }
+}
+
