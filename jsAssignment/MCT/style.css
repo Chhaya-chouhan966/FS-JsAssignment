@@ -84,6 +84,10 @@ body{
     align-items: center;
    
 }
+.imgTemp{
+    height: 100%;
+    width: 100%;
+}
 .oneDiv{
     height: 80%;
     width: 40%;
@@ -139,12 +143,17 @@ body{
     height: 40%;
     width: 100%;
     /* border: 5px solid yellow; */
-  
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    justify-content: center;
 }
-.imgTemp{
-    height: 100%;
-    width: 100%;
+.head4{
+font-size: 1rem;
 }
+
+
+
 
 @media only screen and (max-width:1024px) {
     #head{
@@ -180,6 +189,10 @@ body{
     .twoDiv{
         width: 120%;
         font-size: 1.2rem;
+    }
+    .other{
+        /* font-size: 1rem; */
+        margin-top: 2rem;
     }
 }
 
@@ -218,6 +231,10 @@ body{
         width: 120%;
         font-size: 1.2rem;
     }
+    #other{
+        /* font-size: 1rem; */
+        margin-top: 4rem;
+    }
 }
 
 @media only screen and (max-width:500px) {
@@ -254,6 +271,11 @@ body{
     .twoDiv{
         width: 100%;
         font-size: 1rem;
+    }
+    #other{
+        width: 150%;
+        /* font-size: 1rem; */
+        margin-top: 2rem;
     }
 }
 @media only screen and (max-width:350px) {
@@ -297,6 +319,11 @@ body{
         justify-content: center;
         align-items: flex-start;
         font-size: 0.9rem;
+    }
+    #other{
+        width: 150%;
+        /* font-size: 1rem; */
+        margin-top: 3rem;
     }
 }
 
